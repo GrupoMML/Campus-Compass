@@ -1,0 +1,476 @@
+.body {
+  background: #ffffff;
+  left: 0px;
+  top: 0px;
+}
+.foot {
+  background: #000d4f;
+  width: 1920px;
+  height: 122px;
+  position: absolute;
+  left: 0px;
+  top: 6665px;
+}
+.todos-os-direitos-reservados-campus-compass {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 587px;
+  top: 44px;
+  width: 746px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-up {
+  width: 3.47%;
+  height: 7.42%;
+  position: absolute;
+  right: 1.96%;
+  left: 94.57%;
+  bottom: -511.62%;
+  top: 604.2%;
+  overflow: visible;
+}
+.link-teste {
+  background: #f2f2f2;
+  border-radius: 30px;
+  width: 1880px;
+  height: 662px;
+  position: absolute;
+  left: 23px;
+  top: 5693px;
+}
+.vem-descobrir-o-melhor-curso-pra-ti {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 78px;
+  top: 5613px;
+  width: 1002px;
+  height: 80px;
+}
+.teste-vocacional {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 78px;
+  top: 5511px;
+  width: 885px;
+  height: 112px;
+}
+.frame-5 {
+  background: #f2f2f2;
+  border-radius: 30px;
+  width: 1880px;
+  height: 662px;
+  position: absolute;
+  left: 23px;
+  top: 4553px;
+}
+.post-3 {
+  background: #ffffff;
+  border-radius: 25px;
+  width: 544px;
+  height: 583px;
+  position: absolute;
+  left: 1283px;
+  top: 39px;
+}
+.post-2 {
+  background: #ffffff;
+  border-radius: 25px;
+  width: 543px;
+  height: 583px;
+  position: absolute;
+  left: 668px;
+  top: 39px;
+}
+.post-1 {
+  background: #ffffff;
+  border-radius: 25px;
+  width: 544px;
+  height: 583px;
+  position: absolute;
+  left: 52px;
+  top: 39px;
+}
+.ver-mais {
+  color: #000000;
+  text-align: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 848px;
+  top: 4473px;
+  width: 1002px;
+  height: 80px;
+}
+.vem-conhecer-mais-das-universidades-e-cursos {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 75px;
+  top: 4473px;
+  width: 1002px;
+  height: 80px;
+}
+.nosso-blog {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 75px;
+  top: 4371px;
+  width: 885px;
+  height: 112px;
+}
+.top-5 {
+  background: #f2f2f2;
+  width: 1920px;
+  height: 684px;
+  position: absolute;
+  left: 0px;
+  top: 3419px;
+  overflow-x: auto;
+}
+.rectangle-6 {
+  background: #ffffff;
+  border-radius: 25px;
+  width: 476px;
+  height: 583px;
+  position: absolute;
+  left: 75px;
+  top: 50px;
+}
+.rectangle-7 {
+  background: #ffffff;
+  border-radius: 25px;
+  width: 476px;
+  height: 583px;
+  position: absolute;
+  left: 622px;
+  top: 50px;
+}
+.rectangle-8 {
+  background: #ffffff;
+  border-radius: 25px;
+  width: 476px;
+  height: 583px;
+  position: absolute;
+  left: 1169px;
+  top: 50px;
+}
+.rectangle-9 {
+  background: #ffffff;
+  border-radius: 25px;
+  width: 476px;
+  height: 583px;
+  position: absolute;
+  left: 1716px;
+  top: 50px;
+}
+.rectangle-10 {
+  background: #ffffff;
+  border-radius: 25px;
+  width: 476px;
+  height: 583px;
+  position: absolute;
+  left: 2263px;
+  top: 50px;
+}
+.rectangle-11 {
+  background: #ffffff;
+  border-radius: 25px;
+  width: 476px;
+  height: 583px;
+  position: absolute;
+  left: 2810px;
+  top: 50px;
+}
+.entre-os-3-ranking-mais-respeitados-do-mundo {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 75px;
+  top: 3339px;
+  width: 1002px;
+  height: 80px;
+}
+.as-6-melhores-do-ano {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 75px;
+  top: 3237px;
+  width: 885px;
+  height: 112px;
+}
+.portugal-map {
+  width: 1146px;
+  height: 1712px;
+  position: absolute;
+  left: 387px;
+  top: 1257px;
+  object-fit: cover;
+}
+.map-area {
+  width: 1920px;
+  height: 1940px;
+  position: absolute;
+  left: 0px;
+  top: 1196px;
+}
+.norte {
+  width: 683px;
+  height: 619px;
+  position: absolute;
+  left: 853px;
+  top: -57px;
+}
+.norte2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+
+.norte2:hover {
+  cursor: pointer;
+  transition: 100ms;
+}
+
+.centro {
+  width: 859px;
+  height: 852px;
+  position: absolute;
+  left: 625px;
+  top: 363px;
+}
+.centro2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.alentejo {
+  width: 722px;
+  height: 771px;
+  position: absolute;
+  left: 762px;
+  top: 864px;
+}
+.alentejo2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.algarve {
+  width: 504px;
+  height: 440px;
+  position: absolute;
+  left: 791px;
+  top: 1486px;
+}
+.algarve2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.lisboa {
+  width: 642px;
+  height: 439px;
+  position: absolute;
+  left: 362px;
+  top: 969px;
+}
+.lisboa2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.madeira {
+  width: 360px;
+  height: 341px;
+  position: absolute;
+  left: 375px;
+  top: 1382px;
+}
+.madeira2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.ac-ores {
+  width: 489px;
+  height: 489px;
+  position: absolute;
+  left: 345px;
+  top: 73px;
+}
+.ac-ores2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+.indica-a-regi-o-desejada-no-mapa-abaixo {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  position: absolute;
+  left: 458px;
+  top: 1037px;
+  width: 1003px;
+  height: 68px;
+}
+.onde-queres-estudar {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 517px;
+  top: 941px;
+  width: 885px;
+  height: 112px;
+}
+.welcome {
+  width: 1920px;
+  height: 639px;
+  position: absolute;
+  left: 0px;
+  top: 220px;
+}
+.faz-teu-caminho-at-a-universidade {
+  color: #000000;
+  text-align: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  position: absolute;
+  left: 1021px;
+  top: 112px;
+  width: 784px;
+  height: 166px;
+}
+.vem-conosco-descobrir-a-universidade-ideal-para-ti {
+  color: #000000;
+  text-align: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  left: 1021px;
+  top: 481px;
+  width: 776px;
+  height: 77px;
+}
+.rectangle-4 {
+  background: #d9d9d9;
+  border-radius: 30px;
+  width: 872px;
+  height: 456px;
+  position: absolute;
+  left: 115px;
+  top: 112px;
+}
+.navbar {
+  background: #000d4f;
+  width: 1920px;
+  height: 153px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.options {
+  width: 4.38%;
+  height: 32.68%;
+  position: absolute;
+  right: 2.86%;
+  left: 92.76%;
+  bottom: 33.33%;
+  top: 33.99%;
+  overflow: visible;
+}
+.logo {
+  background: #d9d9d9;
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  left: 32px;
+  top: 30px;
+}
+.campus-compass {
+  color: #ffffff;
+  text-align: center;
+  font-family: "DoHyeon-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 78px;
+  top: 58px;
+  width: 844px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

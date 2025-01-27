@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste Vocacional</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question h3 {
+      margin-bottom: 10px;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      background: #e8f5e9;
+      border: 1px solid #c8e6c9;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Teste Vocacional</h1>
+    <form id="vocationalTest">
+      <!-- Perguntas serão inseridas dinamicamente aqui -->
+    </form>
+    <button id="submitTest">Ver Resultado</button>
+    <div id="result" class="result" style="display: none;"></div>
+  </div>
+
+  <script>
+    const questions = [
+      {
+        question: "Você prefere trabalhar com números ou com pessoas?",
+        options: ["Números", "Pessoas", "Ambos", "Nenhum"]
+      },
+      {
+        question: "Você gosta de resolver problemas técnicos?",
+        options: ["Sim", "Não", "Às vezes", "Prefiro problemas criativos"]
+      },
+      {
+        question: "Você prefere atividades criativas ou analíticas?",
+        options: ["Criativas", "Analíticas", "Ambas", "Nenhuma"]
+      }
+      // Adicione mais perguntas aqui
+    ];
+
+    const form = document.getElementById('vocationalTest');
+
+    // Renderizar perguntas no formulário
+    questions.forEach((q, index) => {
+      const questionDiv = document.createElement('div');
+      questionDiv.classList.add('question');
+      questionDiv.innerHTML = `
+        <h3>${index + 1}. ${q.question}</h3>
+        <div class="options">
+          ${q.options.map((option, i) => `
+            <label>
+              <input type="radio" name="question${index}" value="${option}"> ${option}
+            </label>
+          `).join('')}
+        </div>
+      `;
+      form.appendChild(questionDiv);
+    });
+
+    document.getElementById('submitTest').addEventListener('click', () => {
+      const answers = [];
+      questions.forEach((q, index) => {
+        const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
+        answers.push(selectedOption ? selectedOption.value : null);
+      });
+
+      // Exemplo de lógica para determinar carreiras
+      const resultDiv = document.getElementById('result');
+      const score = answers.reduce((acc, answer) => {
+        if (answer === "Números" || answer === "Analíticas") acc['Exatas'] = (acc['Exatas'] || 0) + 1;
+        if (answer === "Pessoas" || answer === "Criativas") acc['Humanas'] = (acc['Humanas'] || 0) + 1;
+        return acc;
+      }, {});
+
+      let career;
+      if ((score['Exatas'] || 0) > (score['Humanas'] || 0)) {
+        career = "Engenharia ou Ciências Exatas";
+      } else if ((score['Humanas'] || 0) > (score['Exatas'] || 0)) {
+        career = "Psicologia ou Comunicação";
+      } else {
+        career = "Multidisciplinar (ex.: Administração)";
+      }
+
+      resultDiv.style.display = 'block';
+      resultDiv.textContent = `Baseado nas suas respostas, você pode se interessar por: ${career}`;
+    });
+  </script>
+</body>
+</html>

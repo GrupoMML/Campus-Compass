@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão de Voltar ao Topo</title>
+  <style>
+    /* Estilo geral */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 2000px; /* Apenas para criar um scroll */
+      background-color: #f4f4f4;
+    }
+
+    /* Estilo do botão */
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #37E6A0;
+      color: #000D4F; /* Cor da seta */
+      border: none;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .scroll-top-btn:hover {
+      background-color: #2db68e; /* Tom mais escuro para o hover */
+    }
+
+    /* Estilo do conteúdo */
+    .content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Conteúdo da página -->
+  <div class="content">
+    <h1>Conteúdo da Página</h1>
+    <p>Adicione seu conteúdo aqui.</p>
+    <!-- Você pode adicionar mais conteúdo para testar o scroll -->
+  </div>
+
+  <!-- Botão de voltar ao topo -->
+  <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
+
+  <script>
+    // Seleciona o botão
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    // Adiciona um evento de clique no botão
+    scrollTopBtn.addEventListener('click', () => {
+      // Faz o scroll para o topo da página
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+</body>
+</html>

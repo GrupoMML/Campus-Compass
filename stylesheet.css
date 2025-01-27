@@ -1,0 +1,10 @@
+.col {
+    display: flex;
+    border-radius: 25px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    padding: 100px;
+    margin: 20px;
+}

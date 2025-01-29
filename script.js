@@ -7,10 +7,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mapa de palavras-chave e URLs
     const pages = {
         teste: '/vocacional.html',
-        teclado: 'teclado.html',
-        monitor: 'monitor.html',
-        mouse: 'mouse.html',
-        home: 'index.html',
+        vocacional: '/vocacional.html',
+        testevocacional: '/vocacional.html',
+        universidades: '/universities.html',
+        universidade: '/universities.html',
+        aveiro: '/aveiroPage.html',
+        universidadeaveiro: '/aveiroPage.html',
+        porto: '/portoPage.html',
+        universidadeporto: '/portoPage.html',
+        coimbra: '/coimbraPage.html',
+        universidadecoimbra: '/coimbraPage.html',
+        lisboa: '/lisboaPage.html',
+        novalisboa: '/novaPage.html',
+        universidadenova: '/novaPage.html',
+        minho: '//minhoPage.html',
+        universidademinho: '//minhoPage.html',
+        ranking: "/ranking.html",
     };
 
     // Função para redirecionar

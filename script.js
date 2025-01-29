@@ -261,4 +261,3 @@ document.getElementById('submitTest').addEventListener('click', () => {
     `;
     universitiesDiv.style.display = 'block';
 });
-

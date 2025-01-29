@@ -245,3 +245,10 @@ button:hover {
 .university-list .university:first-child:hover{
     background-color: #002c84;
 }
+
+/* Footer */
+#footer {
+    background-color: #000675;
+    color: white;
+    padding: 20px;
+}

@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = pages[query];
         } else {
             // Caso a palavra não seja encontrada, redireciona para uma página de erro ou resultado genérico
-            alert('Página não encontrada. Verifique sua busca.');
+            alert('Página não encontrada. Verifique a sua pesquisa.');
             window.location.href = '404.html';
         }
     }
@@ -52,48 +52,47 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 // Teste Vocacional //
 
 const questions = [
     {
-    question: "Você prefere trabalhar com números ou com pessoas?",
+    question: "Prefere trabalhar com números ou com pessoas?",
     options: ["Números", "Pessoas", "Ambos", "Nenhum"]
     },
     {
-    question: "Você gosta de resolver problemas técnicos?",
+    question: "Gosta de resolver problemas técnicos?",
     options: ["Sim", "Não", "Às vezes", "Prefiro problemas criativos"]
     },
     {
-    question: "Você prefere atividades criativas ou analíticas?",
+    question: "Prefere atividades criativas ou analíticas?",
     options: ["Criativas", "Analíticas", "Ambas", "Nenhuma"]
     },
     {
-    question: "Você se sente mais confortável trabalhando sozinho ou em equipe?",
-    options: ["Sozinho", "Em equipe", "Depende", "Nenhum"]
+    question: "Sente-se mais confortável a trabalhar sozinho ou em equipa?",
+    options: ["Sozinho", "Em equipa", "Depende", "Nenhum"]
     },
     {
-    question: "Você gosta de planejar antes de executar ou prefere agir imediatamente?",
-    options: ["Planejar", "Agir", "Depende", "Nenhum"]
+    question: "Gosta de planear antes de executar ou prefere agir imediatamente?",
+    options: ["Planear", "Agir", "Depende", "Nenhum"]
     },
     {
-    question: "Você prefere ambientes internos ou externos para trabalhar?",
+    question: "Prefere ambientes internos ou externos para trabalhar?",
     options: ["Internos", "Externos", "Ambos", "Nenhum"]
     },
     {
-    question: "Você prefere resolver problemas lógicos ou emocionais?",
+    question: "Prefere resolver problemas lógicos ou emocionais?",
     options: ["Lógicos", "Emocionais", "Ambos", "Nenhum"]
     },
     {
-    question: "Você gosta de aprender novas tecnologias?",
+    question: "Gosta de aprender novas tecnologias?",
     options: ["Sim", "Não", "Às vezes", "Depende"]
     },
     {
-    question: "Você se interessa mais por saúde, tecnologia ou artes?",
+    question: "Tem mais interesse por saúde, tecnologia ou artes?",
     options: ["Saúde", "Tecnologia", "Artes", "Nenhum"]
     },
     {
-    question: "Você prefere tarefas práticas ou teóricas?",
+    question: "Prefere tarefas práticas ou teóricas?",
     options: ["Práticas", "Teóricas", "Ambas", "Nenhuma"]
     }
 ];
@@ -166,8 +165,6 @@ const universities_health = [
     url: "https://www.ualg.pt/pt/content/faculdade-de-ciencias-da-saude"
     }
 ];
-
-
 
 const form = document.getElementById('vocationalTest');
 

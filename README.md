@@ -1,13 +1,4 @@
 # Campus-Compass
-Site para achar a melhor universidade para o utilizador, com base em suas preferências.
-
-### Tecnologias utilizadas
-
-- HTML
-- CSS
-- JavaScript
-
-# Campus-Compass
 O Campus-Compass é uma aplicação web projetada para ajudar os utilizadores a identificar a universidade que melhor se adequa às suas preferências e necessidades.
 
 ### Funcionalidades
@@ -32,8 +23,8 @@ O projeto é composto pelos seguintes ficheiros e diretórios principais:
 ### Como Utilizar
 **Clone o Repositório:** Faça o clone deste repositório para o seu ambiente local.
 **Abra o Ficheiro index.html:** Utilize o seu navegador preferido para abrir o ficheiro index.html.
-**Navegue pelo Site:** Explore as diferentes secções e utilize as funcionalidades disponíveis para encontrar a universidade ideal para si.
 
 ## OU
 
-**Acede **
+**Navegue pelo Site:** Explore as diferentes secções e utilize as funcionalidades disponíveis para encontrar a universidade ideal para si.
+**Nosso site:** 

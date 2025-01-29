@@ -53,28 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-// Seleciona todas as partes do mapa e o div de informações //
-
-document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".map-piece");
-    const titleElement = document.querySelector(".info-title");
-    const descriptionElement = document.querySelector(".info");
-
-    images.forEach((img) => {
-        img.addEventListener("mouseenter", function () {
-            titleElement.textContent = img.alt; // Define o título
-            descriptionElement.textContent = img.getAttribute("data-info"); // Define a descrição
-        });
-
-        img.addEventListener("mouseleave", function () {
-            titleElement.textContent = "Título";
-            descriptionElement.textContent = "Descrição";
-        });
-    });
-});
-
-
 // Teste Vocacional //
 
 const questions = [
@@ -283,3 +261,4 @@ document.getElementById('submitTest').addEventListener('click', () => {
     `;
     universitiesDiv.style.display = 'block';
 });
+

@@ -128,56 +128,46 @@ header {
 }
 
 .map-area {
+    display: flex;
+    justify-content: space-between;
     height: 1159px;
     position: relative;
+    width: 100%;
 }
 
-.map {
-    flex: 1;
-    max-width: 60%;
+.map-info {
+    width: 100%;
 }
 
 .info {
-    flex: 1;
-    max-width: 40%;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.descrição {
   color: #000000;
-  text-align: left;
+  text-align: right;
   font-family: "Inter-Regular", sans-serif;
-  font-size: 48px;
+  font-size: 1.3rem;
   font-weight: 400;
-  position: absolute;
-  left: 81px;
-  top: 357px;
+  position: relative;
+  top: 210px;
   width: 651px;
-  height: 670px;
+  height: 600px;
+  left: 30%;
 }
-.título {
+.info-title {
   color: #000000;
-  text-align: center;
+  text-align: right;
   font-family: "Inter-Regular", sans-serif;
   font-size: 128px;
   font-weight: 400;
-  position: absolute;
-  left: 73px;
-  top: 136px;
+  position: relative;
+  left: 30%;
+  top: 100px;
   width: 659px;
   height: 136px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .map {
   width: 1114.39px;
   height: 1126px;
-  position: absolute;
+  position: relative;
   left: 0px;
-  top: -2px;
 }
 .centro {
   width: 498.57px;
@@ -569,3 +559,4 @@ header {
 .uni-paragraphs {
     font-size: 1.5rem;
 }
+

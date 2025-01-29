@@ -11,33 +11,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Campus Compass</a>
-            <form class="d-flex ms-auto" role="search">
-                <input id="searchBar" class="form-control me-2" type="search" placeholder="Buscar no site" aria-label="Search">
-                <button class="btn btn-outline-light" type="button" id="searchBtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search-circle" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.398 1.398h-.001c.03.04.063.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85a1.007 1.007 0 0 0-.114-.098zM6.5 10a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/>
-                    </svg>
-                </button>
-            </form>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Campus Compass</a>
+                <form class="d-flex ms-auto" role="search">
+                    <input id="searchBar" class="form-control me-2" type="search" placeholder="Buscar no site" aria-label="Search">
+                    <button class="btn btn-outline-light" type="button" id="searchBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search-circle" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.398 1.398h-.001c.03.04.063.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85a1.007 1.007 0 0 0-.114-.098zM6.5 10a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </nav>
+        
+        <!-- Barra com as opções -->
+        <div class="nav-items" id="navbarMenu">
+            <div class="nav-item"><a href="/about.html">SOBRE NÓS</a></div>
+            <div class="nav-item"><a href="/universities.html">UNIVERSIDADES</a></div>
+            <div class="nav-item"></div>
+            <div class="nav-item"></div>
+            <div class="nav-item"><a href="/ranking.html">RANKING</a></div>
+            <div class="nav-item"><a href="/vocacional.html">TESTE VOCACIONAL</a></div>
         </div>
-    </nav>
-    
-    <!-- Barra com as opções -->
-    <div class="nav-items" id="navbarMenu">
-        <div class="nav-item"><a href="#">UNIVERSIDADES</a></div>
-        <div class="nav-item"><a href="#">CURSOS</a></div>
-        <div class="nav-item"><a href="#">ADMISSÕES</a></div>
-        <div class="nav-item"></div>
-        <div class="nav-item"></div>
-        <div class="nav-item"><a href="#">RANKING</a></div>
-        <div class="nav-item"><a href="#">TESTE VOCACIONAL</a></div>
-        <div class="nav-item"><a href="#">CONTATO</a></div>
-    </div>
-    
-    <img src="images/LogoCompass.png" alt="Logo" class="logo">
+        
+        <img src="images/LogoCompass.png" alt="Logo" class="logo">
+    </header>
 
     <div class="banner">
         <div class="text">
@@ -53,57 +53,96 @@
         <h3 class="map-title">ONDE DESEJA ESTUDAR?</h3>
     </div>
 
-    <div class="map-area">
-        <button class="region centro">
-            <img class="centro2" src="images/Centro.png" alt="Centro" />
-        </button>
-        <button class="region açores">
-            <img class="açores2" src="images/Açores.png" alt="Açores" />
-        </button>
-        <button class="region algarve">
-            <img class="algarve2" src="images/Algarve.png" alt="Algarve" />
-        </button>
-        <button class="region madeira">
-            <img class="madeira2" src="images/Madeira.png" alt="Madeira" />
-        </button>
-        <button class="region alentejo">
-            <img class="alentejo2" src="images/Alentejo.png" alt="Alentejo" />
-        </button>
-        <button class="region lisboa">
-            <img class="lisboa2" src="images/Lisboa.png" alt="Lisboa" />
-        </button>
-        <button class="region norte">
-            <img class="norte2" src="images/Norte.png" alt="Norte" />
-        </button>
+    <!-- Mapa de Portugal -->
+    <div>
+        <div class="map-area">
+            <div class="map">
+                <button class="region açores">
+                    <img class="açores2" src="images/Açores.png" alt="Açores" class="map-piece" data-info="Informações sobre Açores"/>
+                </button>
+                <button class="region norte">
+                    <img class="norte2" src="images/Norte.png" alt="Norte" class="map-piece" data-info="Informações sobre Norte"/>
+                </button>
+                <button class="region centro">
+                    <img class="centro2" src="images/Centro.png" alt="Centro" class="map-piece" data-info="Informações sobre Centro"/>
+                </button>
+                <button class="region alentejo">
+                    <img class="alentejo2" src="images/Alentejo.png" alt="Alentejo" class="map-piece" data-info="Informações sobre Alentejo"/>
+                </button>
+                <button class="region lisboa">
+                    <img class="lisboa2" src="images/Lisboa.png" alt="Lisboa" class="map-piece" data-info="Informações sobre Lisboa"/>
+                </button>
+                <button class="region algarve">
+                    <img class="algarve2" src="images/Algarve.png" alt="Algarve" class="map-piece" data-info="Informações sobre Algarve"/>
+                </button>
+                <button class="region madeira">
+                    <img class="madeira2" src="images/Madeira.png" alt="Madeira" class="map-piece" data-info="Informações sobre Madeira"/>
+                </button>
+            </div>
+            <div>
+                <div class="info-title">Título</div>
+                <div class="info">Descrição</div>
+            </div>
+        </div>          
+        
+        <!-- Div das Informações -->
+        <div class="info" id="info-box">
+        </div>
     </div>
-    
     
     <div class="top-6-title">
         <h1>AS 6 MELHORES DO ANO</h1>
-        <h3>ENTRE OS 3 RANKING MAIS RESPEITADOS DO MUNDO!</h3>
+        <h3>ENTRE OS 3 RANKINGS MAIS RESPEITADOS DO MUNDO!</h3>
     </div>
-    <div class="top-6">
+    
+    <!-- Div 1: Top 3 universidades -->
+    <div id="top-6-123" class="top-123">
         <div class="first">
-
+            <img src="https://www.estudarfora.org.br/wp-content/uploads/2022/05/Universidade-de-Lisboa.jpg" alt="Imagem Exemplo">
+            <h2>Universidade do Lisboa</h2>
+            <p class="highlighted-number">1º</p> 
         </div>
         <div class="second">
-
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvcGgcTpsOxbw-GDYUfzVMTveQ1XfgkpyDwA&s" alt="Imagem Exemplo">
+            <h2>Universidade do Porto</h2>
+            <p class="highlighted-number">2º</p>
         </div>
         <div class="third">
-
-        </div>
-        <div class="fourth">
-
-        </div>
-        <div class="fifth">
-
-        </div>
-        <div class="sixth">
-
+            <img src="https://www.noticiasdeaveiro.pt/wp-content/uploads/2018/12/universidade-aveiro-litoral-magazine-1000x600.jpg" alt="Imagem Exemplo">
+            <h2>Universidade do Aveiro</h2>
+            <p class="highlighted-number">3º</p>
         </div>
     </div>
-
     
+    <!-- Div 2: Próximas 3 universidades -->
+    <div id="top-6-456" class="top-456">
+        <div class="fourth">
+            <img src="https://www.cm-coimbra.pt/wp-content/uploads/2018/11/dreamstime_73000122_1276x616_acf_cropped-1.jpg" alt="Imagem Exemplo">
+            <h2>Universidade do Coimbra</h2>
+            <p class="highlighted-number">4º</p>
+        </div>
+        <div class="fifth">
+            <img src="https://midias.eurodicas.com.br/wp-content/uploads/2024/06/universidade-do-minho-750x420.jpg.webp" alt="Imagem Exemplo">
+            <h2>Universidade do Minho</h2>
+            <p class="highlighted-number">5º</p>
+        </div>
+        <div class="sixth">
+            <img src="https://mobilidade-aulp.org/wp-content/uploads/2019/05/NOVA.jpg" alt="Imagem Exemplo">
+            <h2>Universidade NOVA de Lisboa</h2>
+            <p class="highlighted-number">6º</p>
+        </div>
+    </div>
+    
+    <div class="vocacional">
+        <h1>Não sabes em qual caminho seguir?</h1>
+        <h3>Faz nosso teste vocacional e descobre!</h3>
+        <button class="test-btn btn-primary">TESTE VOCACIONAL</button>
+    </div>
+
+    <footer class="text-center py-4 mt-5" id="footer">
+        <p>&copy; 2025 Campus Compass. Todos os direitos reservados.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

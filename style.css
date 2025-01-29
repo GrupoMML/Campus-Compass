@@ -14,9 +14,16 @@
 }
 
 /* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o header esteja acima de outros elementos */
+}
 .logo {
     height: 20%;
-    position: absolute;
+    position: fixed;
     left: 45%;
     top: 15px;
 }
@@ -38,6 +45,12 @@
     padding-left: 25px;
     font-family: "Do Hyeon", serif;
 }
+
+.navbar-brand:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .nav-items {
     display: flex;
     background-color: #000D40;
@@ -92,6 +105,7 @@
     background: url('images/banner.png') no-repeat center center;
     background-size: cover; /* Faz a imagem ocupar toda a área */
     z-index: -1; /* Coloca o banner atrás dos outros elementos */
+    margin-top: 150px;
 }
 
 .banner .text {
@@ -108,199 +122,209 @@
 
 /* Mapa */
 .map-title-div {
-    display: flex;            /* Habilita o Flexbox */
-    flex-direction: column;   /* Alinha os itens na vertical (coluna) */
-    align-items: center;      /* Centraliza os itens horizontalmente */
-    justify-content: center;  /* Centraliza os itens verticalmente (opcional) */
-    text-align: center;       /* Centraliza o texto */
-    margin: 20px;             /* Espaçamento externo (opcional) */
-    margin-top: 80px;         /* Espaçamento superior */
-}
+    text-align: center;
+    margin-top: 50px;
 
-.map-title {
-    margin: 10px 0;           /* Adiciona espaçamento entre os títulos */
-    color: #000D4F;           /* Cor do texto */
-    font-weight: bold;        /* Texto em negrito */
-    font-family: "Arial", sans-serif; /* Fonte personalizada */
 }
 
 .map-area {
-    width: 1920px;
-    height: 1940px;
+    height: 1159px;
     position: relative;
-    left: 0px;
-    top: 7px;
 }
 
+.map {
+    flex: 1;
+    max-width: 60%;
+}
+
+.info {
+    flex: 1;
+    max-width: 40%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.descrição {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  position: absolute;
+  left: 81px;
+  top: 357px;
+  width: 651px;
+  height: 670px;
+}
+.título {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 128px;
+  font-weight: 400;
+  position: absolute;
+  left: 73px;
+  top: 136px;
+  width: 659px;
+  height: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map {
+  width: 1114.39px;
+  height: 1126px;
+  position: absolute;
+  left: 0px;
+  top: -2px;
+}
 .centro {
-    width: 859px;
-    height: 852px;
-    position: absolute;
-    left: 625px;
-    top: 363px;
+  width: 498.57px;
+  height: 494.51px;
+  position: absolute;
+  left: 362.76px;
+  top: 210.69px;
 }
-
 .centro2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    top: 0%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
 }
-
 .açores {
-    width: 851px;
-    height: 758px;
-    position: absolute;
-    left: 173px;
-    top: -49px;
+  width: 493.93px;
+  height: 439.95px;
+  position: absolute;
+  left: 100.41px;
+  top: -28.44px;
 }
-
 .açores2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    top: 0%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
 }
-
 .algarve {
-    width: 878px;
-    height: 704px;
-    position: absolute;
-    left: 597px;
-    top: 1304px;
+  width: 509.6px;
+  height: 408.61px;
+  position: absolute;
+  left: 346.51px;
+  top: 756.86px;
 }
-
 .algarve2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    top: 0%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
 }
-
 .madeira {
-    width: 665px;
-    height: 888px;
-    position: absolute;
-    left: 223px;
-    top: 1118px;
+  width: 385.97px;
+  height: 515.41px;
+  position: absolute;
+  left: 129.43px;
+  top: 648.9px;
 }
-
 .madeira2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    top: 0%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
 }
-
 .alentejo {
-    width: 816px;
-    height: 861px;
-    position: absolute;
-    left: 683px;
-    top: 821px;
+  width: 473.62px;
+  height: 499.74px;
+  position: absolute;
+  left: 396.42px;
+  top: 476.52px;
 }
-
 .alentejo2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    top: 0%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
 }
-
 .lisboa {
-    width: 841px;
-    height: 746px;
-    position: absolute;
-    left: 270px;
-    top: 816px;
+  width: 488.13px;
+  height: 432.99px;
+  position: absolute;
+  left: 156.71px;
+  top: 473.62px;
 }
-
 .lisboa2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    top: 0%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
 }
 .norte {
-    width: 871px;
-    height: 829px;
-    position: absolute;
-    left: 755px;
-    top: -105px;
+  width: 505.54px;
+  height: 481.16px;
+  position: absolute;
+  left: 438.21px;
+  top: -60.94px;
 }
 .norte2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    top: 0%;
-    object-fit: cover;
-}
-
-.map-area div:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
 }
 
 .centro:hover {
     transform: scale(1.1);
-    z-index: 1;
 }
 
 .açores:hover {
     transform: scale(1.1);
-    z-index: 1;
 }
 
 .algarve:hover {
     transform: scale(1.1);
-    z-index: 1;
 }
 
 .madeira:hover {
     transform: scale(1.1);
-    z-index: 1;
 }
 
 .alentejo:hover {
     transform: scale(1.1);
-    z-index: 1;
 }
 
 .lisboa:hover {
     transform: scale(1.1);
-    z-index: 1;
 }
 
 .norte:hover {
     transform: scale(1.1);
-    z-index: 1;
 }
 
 /* Botões das regiões */
@@ -329,70 +353,210 @@
 
 /* Top6 */
 
-.top-6 {
-    width: 1920px;
-    height: 684px;
-    position: absolute;
-    left: 0px;
-    overflow-x: auto;
-    scrollbar-color: #FFFFFF #FFFFFF;
-}
-.first {
-    background: #d2d2d2;
-    border-radius: 25px;
-    width: 476px;
-    height: 583px;
-    position: absolute;
-    left: 75px;
-    top: 50px;
-}
-.second {
-    background: #d2d2d2;
-    border-radius: 25px;
-    width: 476px;
-    height: 583px;
-    position: absolute;
-    left: 622px;
-    top: 50px;
-}
-.third {
-    background: #d2d2d2;
-    border-radius: 25px;
-    width: 476px;
-    height: 583px;
-    position: absolute;
-    left: 1169px;
-    top: 50px;
-}
-.fourth {
-    background: #d2d2d2;
-    border-radius: 25px;
-    width: 476px;
-    height: 583px;
-    position: absolute;
-    left: 1716px;
-    top: 50px;
-}
-.fifth {
-    background: #d2d2d2;
-    border-radius: 25px;
-    width: 476px;
-    height: 583px;
-    position: absolute;
-    left: 2263px;
-    top: 50px;
-}
-.sixth {
-    background: #d2d2d2;
-    border-radius: 25px;
-    width: 476px;
-    height: 583px;
-    position: absolute;
-    left: 2810px;
-    top: 50px;
-    margin-right: 200px;
+.top-6-title {
+    text-align: center;
+    margin: 30px 0 20px;
 }
 
-.top-6-title {
-    margin-left: 90px;
+/* Container para os divs "top-123" e "top-456" */
+.top-container {
+    display: flex;
+    flex-direction: column; /* Organiza os divs verticalmente */
+    gap: 20px; /* Espaçamento entre os divs */
+    width: 90%; /* Define uma largura que se adapta à tela */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.top-123, .top-456 {
+    display: flex; /* Organiza as caixas dentro dos divs horizontalmente */
+    flex-wrap: nowrap; /* Impede quebra de linha */
+    gap: 10px; /* Espaço entre as caixas */
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow-x: auto; /* Permite rolagem horizontal caso necessário */
+}
+
+/* Estilo para as caixas */
+.first, .second, .third, .fourth, .fifth, .sixth {
+    width: 600px;
+    height: 450px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+}
+
+.highlighted-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.first img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.first h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.second img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.second h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.third img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.third h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.fourth img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.fourth h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.fifth img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.fifth h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.sixth img {
+    width: 100%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.sixth h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Teste vocacional */
+.vocacional {
+    text-align: center;
+    margin: 60px;
+}
+
+.test-btn {
+    color: white;
+    background-color: rgb(1, 180, 1);
+    height: 60px;
+    width: 400px;
+    margin: 20px;
+    border:0;
+    border-radius: 10px;
+}
+
+.test-btn:hover {
+    background-color: green;
+}
+
+/* Footer */
+#footer {
+    background-color: #000675;
+    color: white;
+    padding: 20px;
+}
+
+/* University page */
+
+.uni-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    padding: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px; /* Adiciona um espaçamento entre as linhas */
+    border-radius: 10px;
+}
+
+.uni-box img {
+    margin-right: 15px;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.uni-box h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.uni-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 400px;
+    margin-top: 300px;
+    margin-bottom: 40px;
+}
+
+/* Universities pages */
+
+.universities-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 150px;
+}
+
+.university-title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* About us */
+
+.aboutcontainer {
+    margin-top: 100px;
+    margin-inline: 450px;
+    margin-bottom: 200px;
+}
+
+.about-title {
+    font-size: 3rem;
+    margin-bottom: 70px;
+}
+
+.about-text {
+    font-size: 1.5rem;
 }
